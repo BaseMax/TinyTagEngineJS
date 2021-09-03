@@ -7,7 +7,7 @@ const tag_engine = (input, tags) => {
     let res = input;
 
     for( let tag in tags) {
-        const pattern = `/\[(\s*|)${tag}(\s*|)(\:(\s*|)([0-9]+)(\s*|)|)\]/g`;
+        const pattern = `/\\[(\s*|)${tag}(\\s*|)(\\:(\\s*|)([0-9]+)(\\s*|)|)\\]/g`;
         console.log(tag, pattern);
         const reg = new RegExp(pattern);
         res = res.replace(reg, function(e) {
