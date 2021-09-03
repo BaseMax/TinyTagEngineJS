@@ -41,7 +41,7 @@
     };
 
     const update = () => {
-      const res = tag_engine(input, tags);
+      const res = tag_engine(input.value, tags);
       output.innerText = res;
       preview.innerHTML = res;
     };
