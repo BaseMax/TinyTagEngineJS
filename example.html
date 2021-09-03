@@ -27,12 +27,13 @@
     <div id="preview"></div>
     <br>
     
-    <script>
+    <script type="text/javascript">
     const input = document.querySelector("#input");
     const output = document.querySelector("#output");
     const preview = document.querySelector("#preview");
-
-    let tags = {
+    
+    // Your config
+    const tags = {
       "feature": (id) => `<feature id=${id}></feature>`,
       "slider": (id) => `<slider id=${id}></slider>`,
       "myown": (id) => `<myown id=${id}></myown>`,
@@ -45,6 +46,7 @@
       output.innerText = res;
       preview.innerHTML = res;
     };
+
     input.addEventListener("oninput", update);
     window.addEventListener("load", update);
     </script>
