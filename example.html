@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>TinyTagEngine JS - Examples</title>
-	<script src="tag-engine.js" type="text/javascript"></script>
-</head>
-<body>
-  <h1>Tiny Tag-Engine JS</h1>
-  <br>
+  <head>
+    <meta charset="utf-8">
+    <title>TinyTagEngine JS - Examples</title>
+    <script src="tag-engine.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h1>Tiny Tag-Engine JS</h1>
+    <br>
 
-  <b>Input:</b><br>
-  <textarea id="input"><center>[feature:1]</center><br>[feature:2]<hr>[mine:1234]<hr>[your:hi]<hr>[slider:12123]<hr>[myown:234234]<hr>...<p>Hello!</p></textarea>
-  <br>
+    <b>Input:</b><br>
+    <textarea id="input"><center>[feature:1]</center><br>[feature:2]<hr>[mine:1234]<hr>[your:hi]<hr>[slider:12123]<hr>[myown:234234]<hr>...<p>Hello!</p></textarea>
+    <br>
 
-  <b>Output:</b><br>
-  <textarea id="output"></textarea>
-  <br>
+    <b>Output:</b><br>
+    <textarea id="output"></textarea>
+    <br>
 
-  <b>Preview:</b><br>
-  <div id="preview"></div>
-  <br>
-  
-  <script>
-  const input = document.querySelector("#input");
-  const output = document.querySelector("#output");
-  const preview = document.querySelector("#preview");
+    <b>Preview:</b><br>
+    <div id="preview"></div>
+    <br>
+    
+    <script>
+    const input = document.querySelector("#input");
+    const output = document.querySelector("#output");
+    const preview = document.querySelector("#preview");
 
-  let tags = {
-    "feature": (id) => `<feature id=${id}></feature>`,
-    "slider": (id) => `<slider id=${id}></slider>`,
-    "myown": (id) => `<myown id=${id}></myown>`,
-    "your": (id) => `<your id=${id}></your>`,
-    "mine": (id) => `<mine id=${id}></mine>`,
-  };
+    let tags = {
+      "feature": (id) => `<feature id=${id}></feature>`,
+      "slider": (id) => `<slider id=${id}></slider>`,
+      "myown": (id) => `<myown id=${id}></myown>`,
+      "your": (id) => `<your id=${id}></your>`,
+      "mine": (id) => `<mine id=${id}></mine>`,
+    };
 
 
-  input.addEventListener("oninput", () => {
-    const res = tag_engine(input, tags);
-    output.innerText = res;
-    preview.innerHTML = res;
-  });
-  </script>
+    input.addEventListener("oninput", () => {
+      const res = tag_engine(input, tags);
+      output.innerText = res;
+      preview.innerHTML = res;
+    });
+    </script>
 
-  <hr>
-  © Copyright <a href="https://github.com/BaseMax/">Max Base</a>, 2021 (<a href="https://github.com/BaseMax/TinyTagEngineJS">GitHub</a>)
-</body>
+    <hr>
+    © Copyright <a href="https://github.com/BaseMax/">Max Base</a>, 2021 (<a href="https://github.com/BaseMax/TinyTagEngineJS">GitHub</a>)
+  </body>
 </html>
