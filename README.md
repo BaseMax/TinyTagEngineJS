@@ -1,5 +1,11 @@
 # Tiny TagEngine JS
 
+Sometimes you need to get input from the user that contains the symbols you want to tag.
+
+By this tiny library you are able to convert input text into your own tags and renders these.
+
+It can be used in React/Vuejs as well, although the example I implemented has been implemented in Pure JS.
+
 ### Demo
 
 If you are going to test and watch a demo, the demo available online on: https://basemax.github.io/TinyTagEngineJS/example.html
