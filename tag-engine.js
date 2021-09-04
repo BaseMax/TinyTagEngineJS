@@ -10,15 +10,17 @@ const tag_engine = (input, tags) => {
     let res = input;
 
     for( let tag in tags) {
-        const pattern = `\\[(\\s*|)${tag}(\\s*|)(\\:([a-zA-Z0-9]+)|)\\]`;
-        console.log(tag, pattern);
+        const pattern = `\\[(\\s*|)${tag}(\\s*|)(\\:([^\\]]+)|)\\]`;
+        // console.log(tag, pattern);
         const reg = new RegExp(pattern, 'g');
         res = res.replace(reg, function(e) {
-            const id = e.match(reg);
+            const id = e.split(reg);
+            // console.log("input", e);
+            // console.log("splits", id);
             if(!id || id[4] === undefined) {
                 id[4] = "";
             }
-            return tags[tag](id[4]);
+            return tags[tag](String(id[4]).trim());
         });
     }
 
