@@ -6,6 +6,20 @@ By this tiny library you are able to convert input text into your own tags and r
 
 It can be used in React/Vuejs as well, although the example I implemented has been implemented in Pure JS.
 
+![Demo - Tiny TagEngine JS](demo.png)
+
+## Input
+
+```
+<center>[feature:1]</center><br>[feature:2]<hr>[mine:1234]<hr>[your:hi]<hr>[slider:12123]<hr>[myown:234234]<hr>...<p>Hello!</p>
+```
+
+## Output
+
+```
+<center><feature id=></feature></center><br><feature id=></feature><hr><mine id=></mine><hr><your id=></your><hr><slider id=></slider><hr><myown id=></myown><hr>...<p>Hello!</p>
+```
+
 ### Demo
 
 If you are going to test and watch a demo, the demo available online on: https://basemax.github.io/TinyTagEngineJS/example.html
