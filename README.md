@@ -12,6 +12,16 @@ If you are going to test and watch a demo, the demo available online on: https:/
 
 ### Using
 
+If you are going to use `.js` script on GitHub, you can use `https://github.com/BaseMax/TinyTagEngineJS/blob/main/tag-engine.js` url.
+
+Load this:
+
+```
+<script src="https://github.com/BaseMax/TinyTagEngineJS/blob/main/tag-engine.js" type="text/javascript"></script>
+```
+
+And next:
+
 ```
 const input = `<center>[feature:1]</center><br>[feature:2]<hr>[mine:1234]<hr>[your:hi]<hr>[slider:12123]<hr>[myown:234234]<hr>...<p>Hello!</p>`;
 const res = tag_engine(input, {
