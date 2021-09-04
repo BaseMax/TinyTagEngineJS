@@ -6,7 +6,7 @@ By this tiny library you are able to convert input text into your own tags and r
 
 It can be used in React/Vuejs as well, although the example I implemented has been implemented in Pure JS.
 
-![Demo - Tiny TagEngine JS](demo.png)
+[![Demo - Tiny TagEngine JS](demo.png)](https://basemax.github.io/TinyTagEngineJS/example.html)
 
 ## Input
 
