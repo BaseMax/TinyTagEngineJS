@@ -12,12 +12,12 @@ If you are going to test and watch a demo, the demo available online on: https:/
 
 ### Using
 
-If you are going to use `.js` script on GitHub, you can use `https://github.com/BaseMax/TinyTagEngineJS/blob/main/tag-engine.js` url.
+If you are going to use `.js` script on GitHub, you can use `https://raw.githubusercontent.com/BaseMax/TinyTagEngineJS/main/tag-engine.js` url.
 
 Load this:
 
 ```
-<script src="https://github.com/BaseMax/TinyTagEngineJS/blob/main/tag-engine.js" type="text/javascript"></script>
+<script src="https://raw.githubusercontent.com/BaseMax/TinyTagEngineJS/main/tag-engine.js" type="text/javascript"></script>
 ```
 
 And next:
